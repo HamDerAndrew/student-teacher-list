@@ -1,28 +1,6 @@
-﻿@using UclLib.Object;
-@using UclLib.Data;
-@{
-    Layout = null;
-    List<Person> data = GetData.GetAllUclData();
+﻿@{ 
+    Layout = "^~/MasterLayout.cshtml";
 }
 
-<!DOCTYPE html>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Home</title>
-</head>
-<body>
-    <h1>Hello, World!</h1>
-    <div>
 
-        <h1>List of students and teachers at UCL</h1>
-        <ul>
-            @foreach(var person in data)
-            {
-                <li>@person.Name</li>
-            }
-        </ul>
-    </div>
-</body>
-</html>

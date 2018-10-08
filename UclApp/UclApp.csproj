@@ -95,7 +95,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Index.cshtml" />
+    <Content Include="MasterLayout.cshtml" />
     <None Include="packages.config" />
+    <Content Include="Teacher.cshtml" />
+    <Content Include="Student.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -1,0 +1,22 @@
+﻿@using UclLib.Object;
+@using UclLib.Data;
+@{
+    Layout = "~/MasterLayout.cshtml";
+    var students = GetData.GetStudents();
+}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="list-group">
+                @foreach(var student in students)
+                {
+                    <a href="#" class="list-group-item list-group-item-action active">
+                        @student.Name
+                    </a>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+
